@@ -42,7 +42,7 @@ for line in input_file.readlines():
 	line = line.replace('-','')
 	row = line.rstrip().split('\t')
         #print row[0]
-	if row[0] == 'Catalog ID' or row[0] == '# Catalog Locus ID':
+	if row[0] == 'Catalog ID' or row[0] == '# Catalog Locus ID' or row[0] == 'Catalog.ID':
 		header = row
 		samples = header[2:len(header)]
 		output.write(line)
